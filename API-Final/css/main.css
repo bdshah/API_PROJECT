@@ -1,0 +1,209 @@
+@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro');
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.flex.container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.movieCard {
+    width: 70rem;
+    height: auto;
+    margin: 1rem auto;
+    cursor: pointer;
+    background-color: cornflowerblue;
+    box-shadow : 3px 3px black;
+    border: 1px solid;
+}
+.content > div {
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    grid-template-areas: "a b"
+        "a c"
+        "a d"
+        "a e";
+}
+
+.imageSection {
+    grid-area: a;
+}
+
+.content > div > h3 {
+    grid-area: b;
+    font-family: serif;
+}
+
+.content > div > h4 {
+    grid-area: c;
+}
+
+.content > div > h5 {
+    grid-area: d;
+    font-family: 'Source+Sans+Pro'sans-serif;
+}
+
+p {
+    grid-area: e;
+    font-family: sans-serif;
+}
+
+.movieCard:hover {
+    transform: scale(1.05);
+}
+
+.overlay {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 100;
+    background: rgba(0, 0, 0, 0.8);
+    cursor: pointer;
+}
+
+.modal {
+    position: fixed;
+    width: 400px;
+    height: 280px;
+    z-index: 200;
+    top: calc((100%-280px)/2);
+    left: calc((100%-400px)/2);
+    font-family: sans-serif;
+    line-height: 1.5;
+    color: red;
+    background-color: rgb(200, 200, 200);
+    
+}
+
+.off {
+    transform: translateY(-800px);
+}
+
+.on {
+    transform: translateY(0);
+}
+
+.hide {
+    display: none;
+}
+
+.show {
+    display: block;
+}
+
+.page {
+    display: none;
+}
+
+.active {
+    display: block;
+}
+
+p {
+    font-family: sans-serif;
+}
+
+.searchButtonDiv {
+    height: 3rem;
+    width: 3rem;
+    cursor: pointer
+}
+
+.iconic-property-stroke,
+.iconic-property-fill {
+    fill: #345;
+    stroke: #269
+}
+
+.title > h2 {
+    font-family: serif;
+}
+
+main {
+    text-align: center;
+    background-color: rgb(204, 255, 153);
+    z-index: 100px;
+    margin: 1rem;
+    padding: 2rem;
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    margin-top: 16rem;
+    justify-content: center;
+}
+
+#search-input {
+    width: 600px;
+    height: 40px;
+    text-align: center;
+    font-size: 1.5rem;
+    margin-right: 1rem;
+    transition: width 1s;
+    font-family: 'Source+Sans+Pro'sans-serif;
+}
+
+#back-button {
+    width: 3rem;
+    height: 3rem;
+    cursor: pointer;
+}
+
+#search-input:hover {
+    width: 700px;
+    height: 40px;
+}
+
+#magnify {
+    width: 2.8rem;
+    height: 2.5rem;
+    margin-left: -5rem;
+    margin-top: 0.2rem;
+    position: relative;
+    cursor: pointer;
+}
+
+.modal-header {
+    padding: 2px 16px;
+    background-color: rgb(153, 153, 255);
+    text-align: center;
+    
+}
+
+.modal-radio {
+    
+    padding-top: 5rem;
+    text-align: center;
+    font-size: 1.3rem;
+    font-family: 'Source+Sans+Pro'sans-serif;
+}
+
+.btnsave {
+    margin-top: 3.5rem;
+    margin-left: 1.5rem;
+    width: 25%;
+    font-size: 1rem;
+    background-color:rgb(153, 153, 255);
+    height: 10%;
+}
+
+.btncancel {
+    width: 25%;
+    height: 10%;
+    font-size: 1rem;
+    margin-left: 9rem;
+    background-color: rgb(153, 153, 255);
+}
+
+h1 {
+    color: rgb(204, 0, 102);
+    font-size: 4rem;
+    text-align: center;
+    text-shadow: 4px 4px green;
+}

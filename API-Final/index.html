@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Movie Recommendations</title>
+    <meta name="viewport" content="width=device-width" />
+    <link rel="stylesheet" href="css/main.css" />
+    
+</head>
+
+<body>
+    <main>
+        <p class="list">
+        </p>
+        <header>
+            <div class="Backbutton">
+                <img id="back-button" data-src="img/media-step.svg" class="iconic iconic-md" extension="CCP4" alt="Back Button" />
+
+            </div>
+
+            <input type="text" id="search-input" placeholder="Enter Search Data" />
+            <div class="magnifyDiv">
+                <img id="magnify" class="iconic iconic-md" data-src="img/magnifying-glass.svg" extension="CCP4" alt="search">
+            </div>
+
+            <div class="searchButtonDiv">
+                <img id="search-button" class="iconic iconic-md" data-src="img/menu.svg" extension="CCP4" alt="search">
+            </div>
+
+        </header>
+
+        <div class="page active" id="search-results">
+            <section class="title"></section>
+            <section class="content flex-container"></section>
+            
+        </div>
+
+        <div class="page" id="recommend-results">
+            <section class="title"></section>
+            <section class="content flex-container"></section>
+        </div>
+    
+    </main>
+
+    <div class="overlay hide">&nbsp;</div>
+    <div class="modal off">
+        <div class="modal-header">
+            <h2>
+                Preference
+            </h2>
+        </div>
+        <div class="modal-radio">
+            <input type="radio" name="show" value="Television" id="TV">
+            <label for="TV">Television</label>
+
+            <input type="radio" name="show" value="Movie" id="Movie" checked>
+            <label for="Movie">Movie</label>
+        </div>
+        <button class="btnsave" value="Save">Save</button>
+        <button class="btncancel" value="Cancel">Cancel</button>
+
+    </div>
+
+    <script src="js/iconic.min.js"></script>
+    <script src="js/key.js"></script>
+    <script src="js/main.js"></script>
+    </body>
+</html>
